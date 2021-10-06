@@ -1,23 +1,65 @@
 import java.util.Scanner;
 
 public class Method {
-    public static void main(String[] args){
-        Scanner sc=new Scanner(System.in);
-        System.out.println("请输入星期几:");
-        int week=sc.nextInt();
-        while(true){
-            if (week < 1||week>7) {
-                System.out.println("输入有误请重新输入");
-                week=sc.nextInt();
-            }else{
-                loseWeightPlan(week);
-                break;
+    public static void main(String[] args) {
+        StudentObject stu=new StudentObject();
+        stu.name="王虎";
+        stu.study();
+    }
+
+    //强制类型转换
+    public static void intToChar(int x) {
+        System.out.println((char) x);
+    }
+
+    //翻转数组元素
+    public static void arrInvert(int arr[]) {
+        for (int i = 0; i <= (arr.length - 1) / 2; i++) {
+            int temp = arr[i];
+            arr[i] = arr[arr.length - 1 - i];
+            arr[arr.length - 1 - i] = temp;
+        }
+        printArray(arr);
+    }
+
+    //判断数组元素是否相等
+    public static boolean arrCompareEqual(int arr1[], int arr2[]) {
+        if (arr1.length != arr2.length) {
+            return false;
+        } else {
+            for (int i = 0; i < arr1.length; i++) {
+                if (arr1[i] != arr2[i]) {
+                    return false;
+                }
+            }
+            return true;
+        }
+    }
+
+    //斐波那契数列
+    public static int fibonacci(int x) {
+        int[] arr = new int[x];
+        arr[0] = 1;
+        arr[1] = 1;
+        for (int i = 2; i < x; i++) {
+            arr[i] = arr[i - 1] + arr[i - 2];
+        }
+        return arr[x - 1];
+    }
+
+    //逢七过
+    public static void pass7() {
+        int i;
+        for (i = 1; i <= 100; i++) {
+            if (i % 7 == 0 || i / 10 == 7 || i % 10 == 7) {
+                System.out.println(i + " ");
             }
         }
     }
+
     //switch练习
-    public static void loseWeightPlan(int week){
-        switch(week){
+    public static void loseWeightPlan(int week) {
+        switch (week) {
             case 1:
                 System.out.println("跑步");
                 break;
@@ -40,35 +82,39 @@ public class Method {
                 System.out.println("吃顿好的");
         }
     }
+
     //求数组最大值
-    public static int getArrayMax(int[] arr){
-        int max=arr[0];
-        for(int i=1;i<arr.length;i++){
-            if(arr[i]>max)
-                max=arr[i];
+    public static int getArrayMax(int[] arr) {
+        int max = arr[0];
+        for (int i = 1; i < arr.length; i++) {
+            if (arr[i] > max)
+                max = arr[i];
         }
         return max;
     }
+
     //数组遍历
-    public static void printArray(int[] arr){
+    public static void printArray(int[] arr) {
         System.out.print("[");
-        for(int i=0;i<arr.length;i++){
-            if(i==arr.length-1){
-                System.out.print(arr[i]+"]");
-            }else{
-                System.out.print(arr[i]+",");
+        for (int i = 0; i < arr.length; i++) {
+            if (i == arr.length - 1) {
+                System.out.print(arr[i] + "]");
+            } else {
+                System.out.print(arr[i] + ",");
             }
         }
     }
+
     //方法重载
-    public static void GetMax(int x,int y){
-        int max=x>y?x:y;
-        System.out.println(max+"大");
+    public static void GetMax(int x, int y) {
+        int max = x > y ? x : y;
+        System.out.println(max + "大");
     }
+
     //方法重载
-    public static void GetMax(int x,int y,int z){
-        int max=x>y?x>z?x:z:y>z?y:z;
-        System.out.println(max+"大");
+    public static void GetMax(int x, int y, int z) {
+        int max = x > y ? x > z ? x : z : y > z ? y : z;
+        System.out.println(max + "大");
     }
 }
 
