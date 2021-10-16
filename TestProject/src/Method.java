@@ -5,24 +5,41 @@ public class Method {
 //        StudentObject stu=new StudentObject();
 //        stu.name="王虎";
 //        stu.study();
-        Scanner sc=new Scanner(System.in);
         int arr[]=new int[5];
-        System.out.println("请给数组遍历5个元素");
+        initArray(arr,5);
+        selectSort(arr);
+        printArray(arr);
+    }
+    //冒泡排序
+    public static void bubbleSort(int arr[]){
         for(int i=0;i<arr.length;i++){
-            arr[i]=sc.nextInt();
-        }
-        for(int i=0;i<arr.length/2;i++){
             for(int j=0;j<arr.length-1-i;j++){
-                if(arr[j]>arr[j+1]){
+                if(arr[j]<arr[j+1]){
                     int temp=arr[j];
                     arr[j]=arr[j+1];
                     arr[j+1]=temp;
                 }
             }
         }
-        printArray(arr);
     }
-
+    //选择排序
+    public static void selectSort(int arr[]){
+        for(int i=0;i<arr.length;i++){
+            int index=i;
+            for(int j=i+1;j<arr.length;j++){
+                if(arr[index]>arr[j]){
+                    index=j;
+                }
+            }
+            if(index==i){
+                continue;
+            }else{
+                int temp=arr[i];
+                arr[i]=arr[index];
+                arr[index]=temp;
+            }
+        }
+    }
     //强制类型转换
     public static void intToChar(int x) {
         System.out.println((char) x);
@@ -118,6 +135,15 @@ public class Method {
             } else {
                 System.out.print(arr[i] + ",");
             }
+        }
+    }
+
+    //创建数组
+    public static void initArray(int arr[],int x){
+        System.out.println("请给组数赋"+x+"个值");
+        Scanner sc=new Scanner(System.in);
+        for(int i=0;i<x;i++){
+            arr[i]=sc.nextInt();
         }
     }
 
