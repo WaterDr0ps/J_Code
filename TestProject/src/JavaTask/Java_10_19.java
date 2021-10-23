@@ -1,6 +1,8 @@
+package JavaTask;
+
 import java.util.Scanner;
 
-public class SchoolTest {
+public class Java_10_19 {
     public static void main(String[] args) {
         int[] arr = {5, 4, 6, 2, 1};
         System.out.println("最大值：" + getArrayMax(arr));
