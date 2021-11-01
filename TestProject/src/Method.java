@@ -2,14 +2,21 @@ import java.util.Scanner;
 
 public class Method {
     public static void main(String[] args) {
-//        StudentObject stu=new StudentObject();
-//        stu.name="王虎";
-//        stu.study();
-
+        Scanner sc=new Scanner(System.in);
+        String input = sc.nextLine();
+        if(judgePassWord(input)){
+            System.out.println("正确");
+        }
     }
 
-
-
+    //判断密码
+    public static boolean judgePassWord(String input){
+        if(input.equals("abcde")){
+            return true;
+        }else{
+            return false;
+        }
+    }
     //冒泡排序
     public static void bubbleSort(int arr[]) {
         for (int i = 0; i < arr.length; i++) {
