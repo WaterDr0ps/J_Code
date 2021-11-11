@@ -1,3 +1,5 @@
+package Practice;
+
 public class StudentObject {
     String name;
     String ID;
