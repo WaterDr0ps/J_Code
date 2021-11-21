@@ -1,24 +1,48 @@
 package Practice;
 
 import java.util.Scanner;
+import java.util.ArrayList;
 
-public class Method {
+public class Test {
     public static void main(String[] args) {
-        Scanner sc=new Scanner(System.in);
-        String input = sc.nextLine();
-        if(judgePassWord(input)){
-            System.out.println("正确");
-        }
+//        ArrayList<String> array = new ArrayList<>();
+//        array.add("hello");
+//        array.add("java");
+//        array.add("world");
+//        for (int i=0;i<array.size();i++){
+//            System.out.println(array.get(i));
+//        }
+//        ArrayList<Student> array=new ArrayList<>();
+//        addStudent(array);
+//        addStudent(array);
+//        for(int i=0;i< array.size();i++){
+//            Student s = array.get(i);
+//            System.out.println(s.getName()+','+s.getAge());
+//        }
+        System.out.printf("%-10s","a b");
+        System.out.printf("%-10s","a b");
     }
 
+    public static void addStudent(ArrayList<Student> array){
+        Scanner sc = new Scanner(System.in);
+        System.out.println("请输入姓名:");
+        String name = sc.nextLine();
+        System.out.println("请输入年龄:");
+        String age = sc.nextLine();
+        Student s=new Student();
+        s.setName(name);;
+        s.setAge(age);
+        array.add(s);
+    }
     //判断密码
-    public static boolean judgePassWord(String input){
-        if(input.equals("abcde")){
+    public static boolean judgePassWord(String input) {
+        if (input.equals("abcde")) {
             return true;
-        }else{
+        } else {
             return false;
         }
     }
+
     //冒泡排序
     public static void bubbleSort(int arr[]) {
         for (int i = 0; i < arr.length; i++) {
