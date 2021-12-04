@@ -1,7 +1,10 @@
 package Practice;
 
+import java.util.Arrays;
 import java.util.Scanner;
 import java.util.ArrayList;
+
+import static java.util.Arrays.copyOf;
 
 public class Test {
     public static void main(String[] args) {
@@ -19,8 +22,16 @@ public class Test {
 //            Student s = array.get(i);
 //            System.out.println(s.getName()+','+s.getAge());
 //        }
-        System.out.printf("%-10s","a b");
-        System.out.printf("%-10s","a b");
+        String[] arr=new String[100];
+        arr[0]="w01";
+
+
+    }
+
+    public static int[] expandArray(int[] arr){
+        arr=Arrays.copyOf(arr,arr.length+1);
+        arr[arr.length-1]=4;
+        return arr;
     }
 
     public static void addStudent(ArrayList<Student> array){
@@ -171,6 +182,7 @@ public class Test {
                 System.out.print(arr[i] + ",");
             }
         }
+        System.out.println('\n');
     }
 
     //创建数组
