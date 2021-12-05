@@ -22,15 +22,16 @@ public class Test {
 //            Student s = array.get(i);
 //            System.out.println(s.getName()+','+s.getAge());
 //        }
-        String[] arr=new String[100];
-        arr[0]="w01";
+        int[] arr=new int[]{1};
+        arr=expandArray(arr);
+        printArray(arr);
 
 
     }
 
     public static int[] expandArray(int[] arr){
         arr=Arrays.copyOf(arr,arr.length+1);
-        arr[arr.length-1]=4;
+        arr[arr.length-1]=2;
         return arr;
     }
 

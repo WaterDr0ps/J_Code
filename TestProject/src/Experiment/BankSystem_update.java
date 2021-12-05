@@ -32,9 +32,9 @@ public class BankSystem_update {
                                                     System.out.println("用户名重复，请重新输入：");
                                                     continue;
                                                 }
-                                                account = Arrays.copyOf(account, account.length + 1);
-                                                password = Arrays.copyOf(password, password.length + 1);
-                                                money = Arrays.copyOf(money, money.length + 1);
+                                                account=expandStringArray(account);
+                                                password = expandStringArray(password);
+                                                money = expandDoubleArray(money);
                                                 account[account.length - 1] = input;
                                                 System.out.println("请输入该账号密码：");
                                                 password[password.length - 1] = sc.next();
@@ -48,9 +48,7 @@ public class BankSystem_update {
                                                 if (index[0] == 0) {
                                                     System.out.println("管理员账户不允许删除！");
                                                 } else {
-                                                    account[index[0]] = null;
-                                                    password[index[0]] = null;
-                                                    money[index[0]] = 0;
+                                                    account=closeAccount(account,index);
                                                     System.out.println("账户注销成功！");
                                                     break;
                                                 }
@@ -64,6 +62,7 @@ public class BankSystem_update {
                                         default:
                                             break;
                                     }
+
                                     if (x != 1 && x != 2 && x != 3) {
                                         System.out.println("请输入您的账号：");
                                         break;
@@ -200,6 +199,28 @@ public class BankSystem_update {
         account = Arrays.copyOf(account, account.length + 1);
         password = Arrays.copyOf(password, password.length + 1);
         money = Arrays.copyOf(money, money.length + 1);
+    }
+
+    public static String[] closeAccount(String[] account,int[] index){
+        String[] arr=new String[account.length-1];
+        int j=0;
+        for(int i=0;i< account.length;i++){
+            if(i!=index[0]){
+                arr[j] = account[i];
+                j++;
+            }
+        }
+        return arr;
+    }
+
+    public static String[] expandStringArray(String[] arr){
+        arr=Arrays.copyOf(arr,arr.length+1);
+        return arr;
+    }
+
+    public static double[] expandDoubleArray(double[] arr){
+        arr=Arrays.copyOf(arr,arr.length+1);
+        return arr;
     }
 
 }
