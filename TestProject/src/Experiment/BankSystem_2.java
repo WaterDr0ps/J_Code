@@ -3,7 +3,7 @@ package Experiment;
 import java.util.Arrays;
 import java.util.Scanner;
 
-public class BankSystem_update {
+public class BankSystem_2 {
     public static void main(String[] args) {
         String[] account = {"a001"};
         String[] password = {"001"};

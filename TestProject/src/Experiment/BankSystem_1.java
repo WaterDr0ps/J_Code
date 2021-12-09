@@ -2,7 +2,7 @@ package Experiment;
 
 import java.util.Scanner;
 
-public class BankSystem {
+public class BankSystem_1 {
     public static void main(String[] args) {
         String[] account = new String[5];
         String[] password = new String[5];
