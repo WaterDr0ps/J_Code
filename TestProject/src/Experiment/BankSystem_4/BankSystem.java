@@ -5,4 +5,4 @@ public class BankSystem {
         Account loanAccount=new LoanAccount("a001","001",0,"贷款账户",500);
         (LoanAccount)loanAccount
     }
-}
+} 
