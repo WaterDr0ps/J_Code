@@ -1,6 +1,4 @@
 package Experiment;
-
-import java.util.Arrays;
 import java.util.Scanner;
 
 public class BankSystem_2 {
@@ -23,7 +21,7 @@ public class BankSystem_2 {
                                 while (true) {
                                     System.out.println("请选择您的操作，1-注册新账号，2-注销新账号，3-查询所有账户信息，其他-重新登陆");
                                     int x = sc.nextInt();
-                                    switch (x) {
+                                    switch (x){
                                         case 1:
                                             System.out.println("请输入新账号名：");
                                             while (true) {
@@ -41,28 +39,9 @@ public class BankSystem_2 {
                                                 System.out.println("注册成功！");
                                                 break;
                                             }
-                                            break;
-                                        case 2:
-                                            System.out.println("请输入要注销的账号名：");
-                                            if (judgeAccount(account, sc.next(), index)) {
-                                                if (index[0] == 0) {
-                                                    System.out.println("管理员账户不允许删除！");
-                                                } else {
-                                                    account=closeAccount(account,index);
-                                                    System.out.println("账户注销成功！");
-                                                    break;
-                                                }
-                                            } else {
-                                                System.out.println("账户不存在！");
-                                            }
-                                            break;
-                                        case 3:
-                                            queryAllAccount(account, password, money);
-                                            break;
                                         default:
-                                            break;
+                                            adminOperation(account,password,money,index,x);
                                     }
-
                                     if (x != 1 && x != 2 && x != 3) {
                                         System.out.println("请输入您的账号：");
                                         break;
@@ -192,16 +171,31 @@ public class BankSystem_2 {
 
     public static void adminOperation(String[] account, String[] password, double[] money, int[] index, int x) {
         Scanner sc = new Scanner(System.in);
+        switch (x) {
+            case 2:
+                System.out.println("请输入要注销的账号名：");
+                if (judgeAccount(account, sc.next(), index)) {
+                    if (index[0] == 0) {
+                        System.out.println("管理员账户不允许删除！");
+                    } else {
+                        account= deleteAccount(account,index);
+                        System.out.println("账户注销成功！");
+                        break;
+                    }
+                } else {
+                    System.out.println("账户不存在！");
+                }
+                break;
+            case 3:
+                queryAllAccount(account, password, money);
+                break;
+            default:
+                break;
+        }
 
     }
 
-    public static void expandArray(String[] account, String[] password, double[] money) {
-        account = Arrays.copyOf(account, account.length + 1);
-        password = Arrays.copyOf(password, password.length + 1);
-        money = Arrays.copyOf(money, money.length + 1);
-    }
-
-    public static String[] closeAccount(String[] account,int[] index){
+    public static String[] deleteAccount(String[] account, int[] index){
         String[] arr=new String[account.length-1];
         int j=0;
         for(int i=0;i< account.length;i++){
@@ -214,13 +208,19 @@ public class BankSystem_2 {
     }
 
     public static String[] expandStringArray(String[] arr){
-        arr=Arrays.copyOf(arr,arr.length+1);
-        return arr;
+        String temp[]=new String[arr.length+1];
+        for(int i=0;i<arr.length;i++){
+            temp[i]=arr[i];
+        }
+        return temp;
     }
 
     public static double[] expandDoubleArray(double[] arr){
-        arr=Arrays.copyOf(arr,arr.length+1);
-        return arr;
+        double temp[]=new double[arr.length+1];
+        for(int i=0;i<arr.length;i++){
+            temp[i]=arr[i];
+        }
+        return temp;
     }
 
 }

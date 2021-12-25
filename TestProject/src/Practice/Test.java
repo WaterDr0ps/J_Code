@@ -8,24 +8,6 @@ import static java.util.Arrays.copyOf;
 
 public class Test {
     public static void main(String[] args) {
-//        ArrayList<String> array = new ArrayList<>();
-//        array.add("hello");
-//        array.add("java");
-//        array.add("world");
-//        for (int i=0;i<array.size();i++){
-//            System.out.println(array.get(i));
-//        }
-//        ArrayList<Student> array=new ArrayList<>();
-//        addStudent(array);
-//        addStudent(array);
-//        for(int i=0;i< array.size();i++){
-//            Student s = array.get(i);
-//            System.out.println(s.getName()+','+s.getAge());
-//        }
-        int[] arr=new int[]{1};
-        arr=expandArray(arr);
-        printArray(arr);
-
 
     }
 

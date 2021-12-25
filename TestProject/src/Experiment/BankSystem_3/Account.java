@@ -53,16 +53,12 @@ public class Account {
         this.idType = idType;
     }
 
-
-
     public boolean judgeAccount(String account) {
         if(accountId.equals(account)){
             return true;
         }
         return false;
     }
-
-
 
     public boolean judgePassword(String password) {
         if(this.password.equals(password)){
