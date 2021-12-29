@@ -9,39 +9,51 @@ public class University {
         final String NAME="NUIST";
         Scanner sc=new Scanner(System.in);
         List<Person> list=new ArrayList<>();
-        Person[] student=new Student[100];
-        Person[] teacher=new Teacher[100];
-        int s=0;
-        int t=0;
+        Person person=new Person();
+        boolean fireFlag=false;
         while(true){
-            System.out.println("1.注册 2.开除 3.查同名 4.老师工资总和 其他.退出");
+            System.out.println("1.注册 2.开除 3.查同名 4.老师工资总和 5.查看所有信息 其他.退出");
             int x=sc.nextInt();
             switch (x){
                 case 1:
-                    while(true){
-                        System.out.println("1.注册学生 2.注册老师 其他.退出");
-                        int index=sc.nextInt();
-                        if(index==1){
-                            register(student[s++],index);
-                        }else if(index==2){
-                            register(teacher[t++],index);
-                        }else{
+                    list.add(register(person));
+                    System.out.println("注册成功！");
+                    break;
+                case 2:
+                    Person p=fire(person);
+                    for(int i=0;i<list.size();i++){
+                        if(list.get(i).getName().equals(p.getName())){
+                            list.remove(i);
+                            fireFlag=true;
+                            System.out.println("开除成功！");
                             break;
                         }
                     }
+                    if(!fireFlag){
+                        System.out.println("查无此人！");
+                    }
                     break;
-                case 2:
-                    System.out.println("请输入要开除的姓名");
                 case 3:
+                    System.out.println("请输入姓名：");
+                    String name=sc.next();
+                    List<Person> repeat=searchPerson(name,list);
+                    displayAll(repeat);
+                    break;
                 case 4:
+                    getTotalSalary(list);
+                case 5:
+                    displayAll(list);
+                    break;
                 default:
                     return;
             }
         }
     }
 
-    public static Person register(Person person,int x){
+    public static Person register(Person person){
+        System.out.println("1.注册学生 2.注册老师 其他.退出");
         Scanner sc=new Scanner(System.in);
+        int x=sc.nextInt();
             switch (x){
                 case 1:
                     System.out.println("请输入学生姓名、年龄、学号、专业");
@@ -54,21 +66,20 @@ public class University {
                 default:
                     break;
         }
-
         return person;
     }
 
-    public static void fire(Person person,List<Person> list){
-        for(int i=0;i< list.size();i++){
-            if(list.get(i).equals(person)){
-                list.remove(i);
-            }
-        }
+    public static Person fire(Person person){
+        Scanner sc= new Scanner(System.in);
+        System.out.println("请输入要开除人的姓名：");
+        String name=sc.nextLine();
+        Person p=new Person(name,0);
+        return p;
     }
 
     public static List<Person> searchPerson(String name,List<Person> list){
         List<Person> repeat=new ArrayList<>();
-        for(int i=0;i< list.size();i++){
+        for (int i=0;i<list.size();i++){
             if(list.get(i).getName().equals(name)){
                 repeat.add(list.get(i));
             }
@@ -76,11 +87,18 @@ public class University {
         return repeat;
     }
 
-    public static double getTotalSalary(Teacher[] teacher){
+    public static double getTotalSalary(List<? extends Person> list){
+        list=new ArrayList<Teacher>();
         double count=0;
-        for(int i=0;i< teacher.length;i++){
-            count+=teacher[i].getSalary();
+        for(int i=0;i< list.size();i++){
+            count+=list.get(i).getSalary();
         }
         return count;
+    }
+
+    public static void displayAll(List<Person> list){
+        for (Person p:list) {
+            System.out.println(p);
+        }
     }
 }

@@ -33,4 +33,9 @@ public class Teacher extends Person{
     public void setSalary(double salary) {
         this.salary = salary;
     }
+
+    @Override
+    public String toString(){
+        return super.toString()+",工号："+teacherID+",薪资："+salary;
+    }
 }
