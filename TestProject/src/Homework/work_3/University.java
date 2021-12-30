@@ -17,7 +17,6 @@ public class University {
             switch (x){
                 case 1:
                     list.add(register(person));
-                    System.out.println("注册成功！");
                     break;
                 case 2:
                     Person p=fire(person);
@@ -40,7 +39,8 @@ public class University {
                     displayAll(repeat);
                     break;
                 case 4:
-                    getTotalSalary(list);
+                    System.out.println("老师总工资是："+getTotalSalary(list));
+                    break;
                 case 5:
                     displayAll(list);
                     break;
@@ -58,11 +58,13 @@ public class University {
                 case 1:
                     System.out.println("请输入学生姓名、年龄、学号、专业");
                     person=new Student(sc.next(),sc.nextInt(),sc.next(),sc.next());
-                    break;
+                    System.out.println("注册成功！");
+                    return person;
                 case 2:
                     System.out.println("请输入老师姓名、年龄、工号、薪资");
                     person=new Teacher(sc.next(),sc.nextInt(),sc.next(),sc.nextInt());
-                    break;
+                    System.out.println("注册成功！");
+                    return person;
                 default:
                     break;
         }
@@ -87,11 +89,12 @@ public class University {
         return repeat;
     }
 
-    public static double getTotalSalary(List<? extends Person> list){
-        list=new ArrayList<Teacher>();
+    public static double getTotalSalary(List<Person> list){
         double count=0;
-        for(int i=0;i< list.size();i++){
-            count+=list.get(i).getSalary();
+        for(int i=0;i<list.size();i++){
+            if(list.get(i) instanceof Teacher){
+                count+=((Teacher) list.get(i)).getSalary();
+            }
         }
         return count;
     }

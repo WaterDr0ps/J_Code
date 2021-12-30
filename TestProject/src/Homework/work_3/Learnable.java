@@ -1,6 +1,6 @@
 package Homework.work_3;
 
-public interface Leranable {
+public interface Learnable {
     void study();
     void exercise();
 }

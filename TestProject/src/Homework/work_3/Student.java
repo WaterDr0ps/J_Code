@@ -1,6 +1,6 @@
 package Homework.work_3;
 
-public class Student extends Person implements Leranable{
+public class Student extends Person implements Learnable {
     private String studentID;
     private String major;
 
