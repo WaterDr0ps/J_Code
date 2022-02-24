@@ -42,6 +42,7 @@ public class text {
         Calendar c=Calendar.getInstance();
         c.set(year,2,1);
         c.add(Calendar.DATE,-1);
-        System.out.println(year+"年的二月有："+c.get(Calendar.DATE)+"天");*/
+        System.out.println(year+"年的二月有："+c.get(Calendar.DATE)+"天");
+        */
     }
 }
