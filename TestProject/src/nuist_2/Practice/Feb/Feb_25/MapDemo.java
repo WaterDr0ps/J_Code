@@ -30,7 +30,7 @@ public class MapDemo {
         //第二种
         Set<Map.Entry<String,String>> entrySet=map.entrySet();
         for(Map.Entry<String,String> entry:entrySet){
-            System.out.println(entry.getKey()+","+entry.getValue()) ;
+            System.out.println(entry.getKey()+","+entry.getValue())  ;
         }
     }
 }
