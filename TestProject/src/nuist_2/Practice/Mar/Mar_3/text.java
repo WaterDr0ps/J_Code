@@ -108,38 +108,38 @@ public class text {
 
 
         //赋值多级文件夹
-        File srcFile=new File("D:\\南信大作业\\Java\\9.17_HelloWorld");
-        File destFile=new File("D:\\");
-        copyFolder(srcFile,destFile);
-    }
-
-    private static void copyFolder(File srcFile, File destFile) throws IOException {
-        if(srcFile.isDirectory()){
-            File newFolder=new File(destFile,srcFile.getName());
-            if(!newFolder.exists()){
-                newFolder.mkdir();
-            }
-            File[] listFiles=srcFile.listFiles();
-            for(File srcFiles:listFiles){
-                copyFolder(srcFiles, newFolder);
-            }
-        }else{
-            File newFile=new File(destFile,srcFile.getName());
-            copyFile(srcFile,newFile);
-        }
-
-    }
-
-    private static void copyFile(File srcFile, File destFile) throws IOException{
-        BufferedInputStream bis=new BufferedInputStream(new FileInputStream(srcFile));
-        BufferedOutputStream bos=new BufferedOutputStream(new FileOutputStream(destFile));
-        byte[] bys=new byte[1024];
-        int len;
-        while((len=bis.read(bys))!=-1){
-            bos.write(bys, 0, len);
-        }
-        bis.close();
-        bos.close();
+//        File srcFile=new File("D:\\南信大作业\\Java\\9.17_HelloWorld");
+//        File destFile=new File("D:\\");
+//        copyFolder(srcFile,destFile);
+//    }
+//
+//    private static void copyFolder(File srcFile, File destFile) throws IOException {
+//        if(srcFile.isDirectory()){
+//            File newFolder=new File(destFile,srcFile.getName());
+//            if(!newFolder.exists()){
+//                newFolder.mkdir();
+//            }
+//            File[] listFiles=srcFile.listFiles();
+//            for(File srcFiles:listFiles){
+//                copyFolder(srcFiles, newFolder);
+//            }
+//        }else{
+//            File newFile=new File(destFile,srcFile.getName());
+//            copyFile(srcFile,newFile);
+//        }
+//
+//    }
+//
+//    private static void copyFile(File srcFile, File destFile) throws IOException{
+//        BufferedInputStream bis=new BufferedInputStream(new FileInputStream(srcFile));
+//        BufferedOutputStream bos=new BufferedOutputStream(new FileOutputStream(destFile));
+//        byte[] bys=new byte[1024];
+//        int len;
+//        while((len=bis.read(bys))!=-1){
+//            bos.write(bys, 0, len);
+//        }
+//        bis.close();
+//        bos.close();
 
 
     }
