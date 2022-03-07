@@ -33,6 +33,6 @@ public class text {
         ObjectInputStream ois=new ObjectInputStream(new FileInputStream("D:\\name.txt"));
         Object obj = ois.readObject();
         Student stu=(Student) obj;
-        System.out.println(stu.getName()+","+stu.getAge());
+        System.out.println(stu.getName()+","+stu.getAge()) ;
     }
 }
