@@ -10,7 +10,7 @@ public class Customer implements Runnable{
     @Override
     public void run() {
         while(true){
-            b.get();
+            b.get() ;
         }
     }
 }
