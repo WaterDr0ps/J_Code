@@ -38,12 +38,19 @@ public class text {
 //        });
 //        System.out.println(maxValue);
 
-        
+        String[] arr={"张三,20","李四,14","王五,36"};
+        printInfo(arr, s->{
+            String name=s.split(", ")[0];
+            System.out.print("姓名:"+name);
+        },s->{
+            int age=Integer.parseInt(s.split(",")[1]);
+            System.out.println("年龄:"+age);
+        });
 
     }
 
-    private static void printInfo(String[] name, Consumer<String> c1,Consumer<String> c2){
-        for(String s:name){
+    private static void printInfo(String[] arr, Consumer<String> c1,Consumer<String> c2){
+        for(String s:arr){
             c1.andThen(c2).accept(s);
         }
     }
