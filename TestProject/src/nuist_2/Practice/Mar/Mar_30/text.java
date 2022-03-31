@@ -41,7 +41,7 @@ public class text {
         set.add(40);
         set.add(50);
         Stream<Integer> setStream = set.stream().filter(s -> s > 20);
-        Set<Integer> collect = setStream.collect(Collectors.toSet());
+        Set<Integer> collect = setStream.collect(Collectors.toSet()) ;
     }
     private static ArrayList<String> myFilter(String[] str, Predicate<String> pre1,Predicate<String> pre2){
         ArrayList<String> list=new ArrayList<>();
