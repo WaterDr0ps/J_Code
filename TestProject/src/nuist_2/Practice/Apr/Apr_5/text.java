@@ -32,16 +32,16 @@ public class text {
 //        m.invoke(list, "world");
 //        System.out.println(list);
 
-        Properties prop = new Properties();
-        FileReader fr = new FileReader("D:\\name.txt");
-        prop.load(fr);
-        fr.close();
-        String className = prop.getProperty("className");
-        String methodName=prop.getProperty("methodName");
-        Class<?> c = Class.forName(className);
-        Constructor<?> con = c.getConstructor();
-        Object obj = con.newInstance();
-        Method m=c.getMethod(methodName);
-        m.invoke(obj );
+//        Properties prop = new Properties();
+//        FileReader fr = new FileReader("D:\\name.txt");
+//        prop.load(fr);
+//        fr.close();
+//        String className = prop.getProperty("className");
+//        String methodName=prop.getProperty("methodName");
+//        Class<?> c = Class.forName(className);
+//        Constructor<?> con = c.getConstructor();
+//        Object obj = con.newInstance();
+//        Method m=c.getMethod(methodName);
+//        m.invoke(obj );
     }
 }
