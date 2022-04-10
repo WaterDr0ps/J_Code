@@ -22,20 +22,22 @@ public class Algorithm {
          */
 
         //插入排序
-        int arr[]={20,32,12,4,68,9,16,46,58,6};
-        int right=0;
-        for (int i = 0; i < arr.length; i++) {
-            int cur=right;
-            if(arr[cur]<=arr[i]||cur==0){
-                int index=arr[right];
-                int j;
-                for(j=right;j>cur;j--){
-                    arr[j-1]=arr[j];
-                }
-                arr[j]=index;
-            }else{
-                cur--;
+        /*
+        int[] arr={20,32,12,4,68,9,16,46,58,6};
+        int j;
+        for(int i=1;i<arr.length;i++){
+            int temp=arr[i];
+            for(j=i-1;j>=0&&arr[j]>temp;j--){
+                arr[j+1]=arr[j];
             }
+            arr[j+1]=temp;
         }
+
+        for (int i : arr) {
+            System.out.print(i + " ");
+        }
+         */
+
+        // 
     }
 }
