@@ -4,18 +4,18 @@ package nuist_2.Practice.Apr.Apr_17;
  * @author Eliot
  */
 public class Account {
-    private static int card=10000;
+    private int card;
+    private static int idCounter=10000;
     private String name;
     private String password;
     private double balance=0.0;
     private int limit;
 
     public Account() {
-        card++;
     }
 
     public Account(String name,String password,int limit) {
-        card++;
+        this.card=++idCounter;
         this.name = name;
         this.password=password;
         this.limit=limit;
@@ -57,4 +57,14 @@ public class Account {
         this.limit = limit;
     }
 
+    @Override
+    public String toString() {
+        return "Account{" +
+                "card=" + card +
+                ", name='" + name + '\'' +
+                ", password='" + password + '\'' +
+                ", balance=" + balance +
+                ", limit=" + limit +
+                '}';
+    }
 }
