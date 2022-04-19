@@ -9,7 +9,7 @@ import java.util.Scanner;
 /**
  * @author Eliot
  */
-public class Text {
+public class ATM {
     public static void main(String[] args) {
         List<Account> accounts = new ArrayList<>();
         System.out.println("==================欢迎登陆ATM系统==================");
@@ -39,7 +39,7 @@ public class Text {
     }
 
     private static void queryAll(List<Account> accounts) {
-        for(Account a:accounts){
+        for (Account a : accounts) {
             System.out.println(a.toString());
         }
     }
@@ -137,12 +137,12 @@ public class Text {
                     break;
                 case 5:
                     newPassword(accounts, sc, index);
-                    break;
+                    return;
                 case 6:
                     return;
                 case 7:
                     closeAccounts(accounts, sc, index);
-                    break;
+                    return;
             }
         }
     }
@@ -155,7 +155,8 @@ public class Text {
      * @param index    账户索引
      */
     private static void closeAccounts(List<Account> accounts, Scanner sc, int index) {
-
+        accounts.remove(index);
+        System.out.println("账户注销成功");
     }
 
     /**
@@ -166,7 +167,26 @@ public class Text {
      * @param index    账户索引
      */
     private static void newPassword(List<Account> accounts, Scanner sc, int index) {
-
+        Account account = accounts.get(index);
+        while(true){
+            System.out.print("请输入当前密码：");
+            if(!account.getPassword().equals(sc.next())){
+                System.out.println("密码错误");
+            }else{
+                while(true){
+                    System.out.print("请输入新密码：");
+                    String newPassword=sc.next();
+                    System.out.print("请确认密码：");
+                    if(!newPassword.equals(sc.next())){
+                        System.out.println("两次密码不一致，请重新输入");
+                    }else{
+                        account.setPassword(newPassword);
+                        System.out.println("密码修改成功，请重新登陆");
+                        return;
+                    }
+                }
+            }
+        }
     }
 
     /**
@@ -178,41 +198,41 @@ public class Text {
      */
     private static void transfer(List<Account> accounts, Scanner sc, int index) {
         Account account = accounts.get(index);
-        while(true){
+        while (true) {
             System.out.print("请输入对方卡号：");
-            int card=sc.nextInt();
-            if(!cardExist(accounts,card)){
+            int card = sc.nextInt();
+            if (!cardExist(accounts, card)) {
                 System.out.println("卡号不存在");
-            }else{
-                int newIndex=cardIndex(accounts,card);
-                Account newAccount=accounts.get(newIndex);
-                String name=account.getName();
-                char namePassword=name.charAt(0);
-                System.out.println("请确认["+name.replace(namePassword,'*')+name+"]的姓氏");
-                if(namePassword!=sc.nextByte()){
+            } else if (card == account.getCard()) {
+                System.out.println("不能向自己转账");
+            } else {
+                int newIndex = cardIndex(accounts, card);
+                Account newAccount = accounts.get(newIndex);
+                String name = newAccount.getName();
+                char namePassword = name.charAt(0);
+                System.out.println("请确认[" + name.replace(namePassword, '*') + "]的姓氏");
+                if (namePassword != sc.next().charAt(0)) {
                     System.out.println("姓氏输入有误");
-                }else{
-                    if(account.getBalance()==0){
-                        System.out.println("先去存点钱吧（余额："+account.getBalance()+"元）");
+                } else {
+                    if (account.getBalance() == 0) {
+                        System.out.println("先去存点钱吧（余额：" + account.getBalance() + "元）");
                         return;
-                    }else{
-                        while(true){
-                            System.out.println("请输入转账的金额：（您最多可以转"+account.getBalance()+"元）");
-                            double money=sc.nextDouble();
-                            if(money>account.getBalance()){
+                    } else {
+                        while (true) {
+                            System.out.println("请输入转账的金额：（您最多可以转" + account.getBalance() + "元）");
+                            double money = sc.nextDouble();
+                            if (money > account.getBalance()) {
                                 System.out.println("你没这么多钱转");
-                            }else if(money>account.getLimit()){
-                                System.out.println("超出额度（"+account.getLimit()+"元）");
-                            }else{
-                                account.setBalance(account.getBalance()-money);
-                                newAccount.setBalance(newAccount.getBalance()+money);
-                                System.out.println("转账完成，当前余额："+account.getBalance()+"元");
+                            } else if (money > account.getLimit()) {
+                                System.out.println("超出额度（" + account.getLimit() + "元）");
+                            } else {
+                                account.setBalance(account.getBalance() - money);
+                                newAccount.setBalance(newAccount.getBalance() + money);
+                                System.out.println("转账完成，当前余额：" + account.getBalance() + "元");
                                 return;
                             }
                         }
-
                     }
-
                 }
             }
         }
@@ -228,15 +248,15 @@ public class Text {
     private static void drawMoney(List<Account> accounts, Scanner sc, int index) {
         Account account = accounts.get(index);
         System.out.print("请输入取款金额：");
-        double money=sc.nextDouble();
-        if(money>account.getLimit()){
+        double money = sc.nextDouble();
+        if (money > account.getLimit()) {
             System.out.println("取款失败（取款大于限额）");
-        }else if(money>account.getBalance()){
+        } else if (money > account.getBalance()) {
             System.out.println("取款失败（取款大于余额）");
-        }else{
+        } else {
             account.setBalance(account.getBalance() - money);
             System.out.println("取款成功");
-            query(accounts,index);
+            query(accounts, index);
         }
     }
 
@@ -250,14 +270,14 @@ public class Text {
     private static void deposit(List<Account> accounts, Scanner sc, int index) {
         Account account = accounts.get(index);
         System.out.print("请输入存款金额：");
-        double money=sc.nextDouble();
-        if(money<=0){
+        double money = sc.nextDouble();
+        if (money <= 0) {
             System.out.println("存款失败（金额不能小于等于0）");
-        }else{
-            money+=account.getBalance();
+        } else {
+            money += account.getBalance();
             account.setBalance(money);
             System.out.println("存款成功！");
-            query(accounts,index);
+            query(accounts, index);
         }
     }
 
