@@ -9,7 +9,7 @@ public class Text {
         Computer c=new Computer();
         Usb u=new Mouse("牧马人");
         c.start();
-        c.installUsb(u);
+        c.installUsb(u) ;
 
     }
 }
