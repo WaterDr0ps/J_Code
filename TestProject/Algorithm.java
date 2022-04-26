@@ -1,5 +1,8 @@
 package TestProject;
 
+/**
+ * @author Eliot
+ */
 public class Algorithm {
     public static void main(String[] args) {
         //选择排序
@@ -38,6 +41,28 @@ public class Algorithm {
         }
          */
 
-        //
+        //二分查找
+        /*
+        int[] arr = {2, 7, 12, 25, 28, 30, 46};
+        System.out.println(binarySearch(arr, 28));
+         */
     }
+    //二分查找
+    /*
+    public static int binarySearch(int[] arr, int value) {
+        int left = 0;
+        int right = arr.length - 1;
+        while (left <= right) {
+            int mid=(left+right)/2;
+            if(value>arr[mid]){
+                left=mid+1;
+            }else if(value<arr[mid]){
+                right=mid-1;
+            }else{
+                return mid;
+            }
+        }
+        return -1;
+    }
+     */
 }
