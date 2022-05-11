@@ -10,17 +10,18 @@ public class Movie {
      private int duration;
      private double price;
      private int surplus;
+     private String showtime;
 
     public Movie() {
     }
 
-    public Movie(String name, String actor, double grade, int duration, double price, int surplus) {
+    public Movie(String name, String actor, int duration, double price, int surplus,String showtime) {
         this.name = name;
         this.actor = actor;
-        this.grade = grade;
         this.duration = duration;
         this.price = price;
         this.surplus = surplus;
+        this.showtime=showtime;
     }
 
     public String getName() {
@@ -69,5 +70,13 @@ public class Movie {
 
     public void setSurplus(int surplus) {
         this.surplus = surplus;
+    }
+
+    public String getShowtime() {
+        return showtime;
+    }
+
+    public void setShowtime(String showtime) {
+        this.showtime = showtime;
     }
 }
