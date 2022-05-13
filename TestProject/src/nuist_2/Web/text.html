@@ -3,8 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <title>这是一个文件</title>
+    <script type="text/javascript">
+        function change(x) {
+            if(x===0){document.write("星期日");}
+            else if(x===1){ document.write("星期一");}
+            else if(x===2){document.write("星期二");}
+            else if(x===3){document.write("星期三");}
+            else if(x===4){document.write("星期四");}
+            else if(x===5){document.write("星期五");}
+            else if(x===6){document.write("星期六");}
+            else {document.write("输入有误");}
+        }
+    </script>
 </head>
 <body>
-
+    输入一个0~6的阿拉伯数字：<input id="Text1" type="text"/>
+    <input id="Button1" type="button" value="确认" onclick="change(Number(document.getElementById('Text1').value));"/>
 </body>
 </html>
