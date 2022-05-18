@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>这是一个文件</title>
+    <script type="text/javascript">
+        function showMsg(){
+            let string1="你的姓名："+document.getElementById("Text1").value+"\r\n"
+                + "你的姓名："+(document.getElementById("Radio1").checked?"男":"女")
+                + "你的学历："+document.getElementById("Select1".value+"\r\n")
+                + "你的爱好："+(document.getElementById("Checkbox1").checked ?
+                (document.getElementById("Checkbox1").value+","):"")
+                +(document.getElementById("Checkbox2").checked?
+                (document.getElementById("Checkbox2").value+","):"")
+                +(document.getElementById("Checkbox3"). checked ?
+                (document.getElementById("Checkbox3").value+","):"")
+                +(document.getElementById("Checkbox4").checked ?
+                (document.getElementById('Checkbox4').value+","):"")
+                + (document. getElementById("Checkbox5").checked ?
+                (document.getElementById('Checkbox5').value +","):"")
+                + (document.getElementById("Checkbox6").checked ?
+                (document.getElementById("Checkbox6").value +","):"")
+                alert(string1);
+        }
+    </script>
+</head>
+<body>
+    姓名：<input id="Text1" type="text"/><br />
+    性别：<input id="Radio1"type="radio"value="男"/>男&nbsp;&nbsp;<input id="Radio2"type="radio"value="女" />女<br >
+    学历：<select id="Select1"><option value="初中">初中</option>
+        <option value="中">中</option><option value="大学本科">大学本科
+        </option>
+        <option value="t">t</option>option value="博士">博士</option>
+    </select><br >
+    爱好：<input id ="Checkbox1"type ="checkbox"value ="阅读"/>阅读&nbsp;&nbsp;
+    <input id="Checkbox2"type ="checkbox"value="写作"/>写作&nbsp;&nbsp;
+    <input id="Checkbox3"type ="checkbox"value ="运动" />运动&nbsp;&nbsp;
+    <input id="Checkbox4"type ="checkbox"value="音乐"/>音乐&nbsp;&nbsp;
+    <input id="Checkbox5"type ="checkbox"value ="编程"/>编程&nbsp;&nbsp;
+    <input id="Checkbox6"type ="checkbox"value ="书法"/>书法<br />
+    <input id="Button1"type="button"value="提交"onclick ="showMsg()" />
+
+</body>
+</html>
