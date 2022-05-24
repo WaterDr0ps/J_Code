@@ -2,30 +2,56 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>这是一个文件</title>
+    <title></title>
     <script type="text/javascript">
-        function showMsg(){
-            let string1="你的姓名："+document.getElementById("Text1").value+"\r\n"
-                + "你的姓名："+(document.getElementById("Radio1").checked?"男":"女")
-                + "你的学历："+document.getElementById("Select1".value+"\r\n")
-                + "你的爱好："+(document.getElementById("Checkbox1").checked ?
-                (document.getElementById("Checkbox1").value+","):"")
-                +(document.getElementById("Checkbox2").checked?
-                (document.getElementById("Checkbox2").value+","):"")
-                +(document.getElementById("Checkbox3"). checked ?
-                (document.getElementById("Checkbox3").value+","):"")
-                +(document.getElementById("Checkbox4").checked ?
-                (document.getElementById('Checkbox4').value+","):"")
-                + (document. getElementById("Checkbox5").checked ?
-                (document.getElementById('Checkbox5').value +","):"")
-                + (document.getElementById("Checkbox6").checked ?
-                (document.getElementById("Checkbox6").value +","):"")
-                alert(string1);
+        //2.4
+        /*function showMsg(){
+             let string1="你的姓名："+document.getElementById("Text1").value+"\r\n"
+                 + "你的姓名："+(document.getElementById("Radio1").checked?"男":"女")
+                 + "你的学历："+document.getElementById("Select1".value+"\r\n")
+                 + "你的爱好："+(document.getElementById("Checkbox1").checked ?
+                 (document.getElementById("Checkbox1").value+","):"")
+                 +(document.getElementById("Checkbox2").checked?
+                 (document.getElementById("Checkbox2").value+","):"")
+                 +(document.getElementById("Checkbox3"). checked ?
+                 (document.getElementById("Checkbox3").value+","):"")
+                 +(document.getElementById("Checkbox4").checked ?
+                 (document.getElementById('Checkbox4').value+","):"")
+                 + (document. getElementById("Checkbox5").checked ?
+                 (document.getElementById('Checkbox5').value +","):"")
+                 + (document.getElementById("Checkbox6").checked ?
+                 (document.getElementById("Checkbox6").value +","):"")
+                 alert(string1);
+         }*/
+
+        function checkform() {
+            if (document.login.userid.value === "") {
+                alert("请输人用户名");
+                document.login.userid.focus();
+                return;
+            }
+            if (document.login.userkey1.value === ""){
+                alert("请输入密码");
+                document.login.userkey1.focus();
+                return;
+            }
+            if (document.login.userkey1.value!== document.login.userkey2.value) {
+                alert("两个密码不一致");
+                document.login.userkeyl.focus();
+                return;
+            }
+            if(email_str === document.login.email.value.indexOf("@") === -1) {
+                alert("电子邮件的格式不正确");
+                document.login.email.focus();
+                return;
+            }
+            alert("验证都已通过");
         }
     </script>
 </head>
 <body>
-    姓名：<input id="Text1" type="text"/><br />
+    <!--2.4-->
+    <!--姓名：<input id="Text1" type="text"/><br />
     性别：<input id="Radio1"type="radio"value="男"/>男&nbsp;&nbsp;<input id="Radio2"type="radio"value="女" />女<br >
     学历：<select id="Select1"><option value="初中">初中</option>
         <option value="中">中</option><option value="大学本科">大学本科
@@ -38,7 +64,52 @@
     <input id="Checkbox4"type ="checkbox"value="音乐"/>音乐&nbsp;&nbsp;
     <input id="Checkbox5"type ="checkbox"value ="编程"/>编程&nbsp;&nbsp;
     <input id="Checkbox6"type ="checkbox"value ="书法"/>书法<br />
-    <input id="Button1"type="button"value="提交"onclick ="showMsg()" />
+    <input id="Button1"type="button"value="提交"onclick ="showMsg()" />-->
 
+    <!--2.5-->
+    <form id="login" name="login">
+        <table border="1" cellspacing="0" cellpadding="3" width="380">
+            <tr><td colspan="2" class="td1"><center>用户注册</center></td> </tr>
+            <tr>
+                <td width="289" class="td2">用户名：</td>
+                <td width="295" class="td2">
+                    <input id="userid" type="text" id="userid">
+                </td>
+            </tr>
+            <tr>
+                <td class="td2">密码：</td>
+                <td class="td2">
+                    <input id="userkey1" type="password" id="userkey1">
+                </td>
+            </tr>
+            <tr>
+                <td class="td2">重复密码：</td>
+                <td class="td2">
+                    <input id="userkey2" type="password" id="userkey2">
+                </td>
+            </tr>
+            <tr>
+                <td class="td2">性别：</td>
+                <td class="td2">
+                    <input id="sex" type="radio" value="radiobutton" checked>男
+                    <input id="sex" type="radio" value="radiobutton">女
+                </td>
+            </tr>
+            <tr>
+                <td class="td2">电子邮箱：</td>
+                <td class="td2">
+                    <input id="email" type="text" id="email">
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" class="td3">
+                    <div align="center">
+                        <input id="Button1" type="button" value="提交" onclick="checkform()"/>
+                        <input type="reset" id="Submit2" value="全部重填">
+                    </div>
+                </td>
+            </tr>
+        </table>
+    </form>
 </body>
 </html>
