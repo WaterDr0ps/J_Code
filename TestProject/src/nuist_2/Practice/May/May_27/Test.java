@@ -35,5 +35,8 @@ public class Test {
 //        System.out.println("已用内存"+using/1024/1024+"M");
 //        System.out.println("可用内存"+usable/1024/1024+"M");
 //        System.out.println("空闲内存"+free/1024/1024+"M");
+
+
+
     }
 }
