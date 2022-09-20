@@ -1,7 +1,8 @@
-package nuist_2.Practice.Aug.Aug_30;
+package TestProject.src.nuist_2.Practice.Aug.Aug_30;
 
-import org.junit.jupiter.api.Assertions;
-import org.junit.jupiter.api.Test;
+
+
+import org.junit.Test;
 
 import java.io.IOException;
 import java.net.Socket;
@@ -13,7 +14,7 @@ public class UserServiceTest {
     @Test
     public void sendMsgToAll() throws IOException {
         Socket socket=new Socket("10.33.4.132",100);
-        MyServerThread myServerThread=new MyServerThread(socket);
+        nuist_2.Practice.Aug.Aug_30.MyServerThread myServerThread=new nuist_2.Practice.Aug.Aug_30.MyServerThread(socket);
         myServerThread.sendMsgToAll("123");
     }
 

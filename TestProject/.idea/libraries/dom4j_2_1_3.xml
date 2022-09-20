@@ -1,0 +1,28 @@
+<component name="libraryTable">
+  <library name="dom4j-2.1.3">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/lib/dom4j-2.1.3.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/druid-1.1.22.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/hamcrest-core-1.3.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/jaxen-1.2.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/jna-jpms-5.11.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/jna-platform-jpms-5.11.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/junit-4.12.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/junit-4.13.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/logback-classic-1.2.3.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/logback-core-1.2.3.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/mysql-connector-java-5.1.48.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/slf4j-api-1.7.26.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$PROJECT_DIR$/lib/hamcrest-core-1.3-javadoc.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/junit-4.12-javadoc.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/junit-4.13.1-javadoc.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/commons-io-2.11.0-bin.zip!/commons-io-2.11.0/docs" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$PROJECT_DIR$/lib/hamcrest-core-1.3-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/junit-4.12-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

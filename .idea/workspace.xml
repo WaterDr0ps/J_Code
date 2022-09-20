@@ -1,0 +1,352 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="15808762-ed2d-42b0-a694-08faf629015f" name="变更" comment="">
+      <change afterPath="$PROJECT_DIR$/TestProject/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TestProject/.idea/libraries/Maven__ch_qos_logback_logback_classic_1_2_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TestProject/.idea/libraries/Maven__ch_qos_logback_logback_core_1_2_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TestProject/.idea/libraries/Maven__junit_junit_4_12.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TestProject/.idea/libraries/Maven__mysql_mysql_connector_java_5_1_47.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TestProject/.idea/libraries/Maven__org_apiguardian_apiguardian_api_1_1_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TestProject/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TestProject/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_5_9_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TestProject/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_api_5_9_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TestProject/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_engine_5_9_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TestProject/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_params_5_9_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TestProject/.idea/libraries/Maven__org_junit_platform_junit_platform_commons_1_9_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TestProject/.idea/libraries/Maven__org_junit_platform_junit_platform_engine_1_9_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TestProject/.idea/libraries/Maven__org_mybatis_mybatis_3_5_5.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TestProject/.idea/libraries/Maven__org_opentest4j_opentest4j_1_2_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TestProject/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_20.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TestProject/.idea/libraries/dom4j_2_1_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TestProject/.idea/libraries/druid_1_1_22.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TestProject/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TestProject/html/9-17.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TestProject/html/9-18.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TestProject/img_video/1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TestProject/img_video/apex.mkv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TestProject/lib/commons-io-2.11.0-bin.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TestProject/lib/dom4j-2.1.3.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TestProject/lib/druid-1.1.22.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TestProject/lib/hamcrest-core-1.3-javadoc.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TestProject/lib/hamcrest-core-1.3-sources.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TestProject/lib/hamcrest-core-1.3.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TestProject/lib/jaxen-1.2.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TestProject/lib/jna-jpms-5.11.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TestProject/lib/jna-platform-jpms-5.11.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TestProject/lib/junit-4.12-javadoc.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TestProject/lib/junit-4.12-sources.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TestProject/lib/junit-4.12.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TestProject/lib/junit-4.13.1-javadoc.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TestProject/lib/junit-4.13.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TestProject/lib/logback-classic-1.2.3.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TestProject/lib/logback-core-1.2.3.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TestProject/lib/mysql-connector-java-5.1.48.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TestProject/lib/slf4j-api-1.7.26.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TestProject/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TestProject/src/nuist_2/Practice/test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mybatis-demo/src/main/java/Test/Sep/Sep9_13/MybatisDemo0.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mybatis-demo/src/main/java/Test/Sep/Sep9_13/MybatisDemo1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mybatis-demo/src/main/java/Test/mapper/BrandMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mybatis-demo/src/main/java/Test/mapper/UserMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mybatis-demo/src/main/java/Test/pojo/Brand.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mybatis-demo/src/main/java/Test/pojo/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mybatis-demo/src/main/resources/Test/mapper/BrandMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mybatis-demo/src/main/resources/Test/mapper/UserMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mybatis-demo/src/main/resources/mybatis-config.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mybatis-demo/src/test/java/Sep9/MybatisBrandDemo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mybatis-demo/target/classes/mybatis-demo.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mybatis-demo/target/classes/target/classes/mybatis-demo.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mybatis-demo/target/classes/target/classes/target/classes/mybatis-demo.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mybatis-demo/target/classes/target/classes/target/classes/target/classes/mybatis-demo.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/J_Code_jar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/commons_io_2_11_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/dom4j_2_1_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/druid_1_1_22.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/jaxen_1_2_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/jna_jpms_5_11_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/jna_platform_jpms_5_11_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/logback_classic_1_2_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/mysql_connector_java_5_1_48.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/runConfigurations.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sqldialects.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/J_Code.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TestProject/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/TestProject/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TestProject/.idea/jarRepositories.xml" beforeDir="false" afterPath="$PROJECT_DIR$/TestProject/.idea/jarRepositories.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TestProject/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/TestProject/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TestProject/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/TestProject/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TestProject/Algorithm.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TestProject/TestProject.iml" beforeDir="false" afterPath="$PROJECT_DIR$/TestProject/TestProject.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TestProject/src/nuist_2/Practice/Aug/Aug_30/UserServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/TestProject/src/nuist_2/Practice/Aug/Aug_30/UserServiceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TestProject/src/nuist_2/Practice/Sep/Sep_5/MysqlTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/TestProject/src/nuist_2/Practice/Sep/Sep_5/MysqlTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/commons-io-2.11.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/dom4j-2.1.3.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/druid-1.1.22.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/jaxen-1.2.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/jna-jpms-5.11.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/jna-platform-jpms-5.11.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/logback-classic-1.2.3.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/logback-core-1.2.3.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/mysql-connector-java-5.1.48.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/slf4j-api-1.7.26.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mybatis-demo/mybatis-demo.iml" beforeDir="false" afterPath="$PROJECT_DIR$/mybatis-demo/mybatis-demo.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mybatis-demo/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mybatis-demo/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mybatis-demo/src/druid.properties" beforeDir="false" afterPath="$PROJECT_DIR$/mybatis-demo/src/main/resources/druid.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mybatis-demo/src/logback.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mybatis-demo/src/main/resources/logback.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/J_Code/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/J_Code/DATE.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/J_Code/META-INF/MANIFEST.MF" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/J_Code/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/J_Code/TestProject/Algorithm.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/J_Code/TestProject/src/META-INF/MANIFEST.MF" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/J_Code/TestProject/src/druid.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/J_Code/TestProject/src/nuist_2/Web/E_2.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/J_Code/TestProject/src/nuist_2/Web/Experiment2.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/J_Code/druid.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/J_Code/lib/commons-io-2.11.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/J_Code/lib/dom4j-2.1.3.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/J_Code/lib/druid-1.1.22.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/J_Code/lib/jaxen-1.2.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/J_Code/lib/jna-jpms-5.11.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/J_Code/lib/jna-platform-jpms-5.11.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/J_Code/lib/logback-classic-1.2.3.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/J_Code/lib/logback-core-1.2.3.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/J_Code/lib/mysql-connector-java-5.1.48.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/J_Code/lib/slf4j-api-1.7.26.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/J_Code/nuist_1/Experiment/BankSystem_1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/J_Code/nuist_1/Experiment/BankSystem_2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/J_Code/nuist_1/Experiment/BankSystem_3/Account.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/J_Code/nuist_1/Experiment/BankSystem_3/BankSystem.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/J_Code/nuist_1/Experiment/BankSystem_4/Account.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/J_Code/nuist_1/Experiment/BankSystem_4/BankSystem.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/J_Code/nuist_1/Experiment/BankSystem_4/CheakingAccount.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/J_Code/nuist_1/Experiment/BankSystem_4/CreditAccount.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/J_Code/nuist_1/Experiment/BankSystem_4/LoanAccount.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/J_Code/nuist_1/Experiment/BankSystem_4/Loanable.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/J_Code/nuist_1/Experiment/BankSystem_4/SavingAccount.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/J_Code/nuist_1/Homework/work_2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/J_Code/nuist_1/Homework/work_3/Learnable.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/J_Code/nuist_1/Homework/work_3/Person.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/J_Code/nuist_1/Homework/work_3/Student.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/J_Code/nuist_1/Homework/work_3/Teacher.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/J_Code/nuist_1/Homework/work_3/University.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/J_Code/nuist_1/JavaTask/Java_10_19.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/J_Code/nuist_1/JavaTask/Java_10_21.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/J_Code/nuist_1/JavaTask/Java_10_28/Cat.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/J_Code/nuist_1/JavaTask/Java_10_28/Mouse.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/J_Code/nuist_1/JavaTask/Java_10_28/Test.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/J_Code/nuist_1/JavaTask/Java_11_11/Officer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/J_Code/nuist_1/JavaTask/Java_11_11/Student.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/J_Code/nuist_1/JavaTask/Java_11_11/Teacher.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/J_Code/nuist_1/JavaTask/Java_11_11/Test.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/J_Code/nuist_1/JavaTask/Java_11_2/Student.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/J_Code/nuist_1/JavaTask/Java_11_2/Teacher.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/J_Code/nuist_1/JavaTask/Java_11_2/Test.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/J_Code/nuist_1/Practice/DEMO/Animal.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/J_Code/nuist_1/Practice/DEMO/AnimalDemo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/J_Code/nuist_1/Practice/DEMO/Cat.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/J_Code/nuist_1/Practice/DEMO/Dog.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/J_Code/nuist_1/Practice/DEMO/Skill.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/J_Code/nuist_1/Practice/Student.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/J_Code/nuist_1/Practice/StudentManager/Student.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/J_Code/nuist_1/Practice/StudentManager/StudentManager.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/J_Code/nuist_1/Practice/Test.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/J_Code/nuist_2/Practice/Apr/Apr_16/Text.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/J_Code/nuist_2/Practice/Apr/Apr_17/ATM.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/J_Code/nuist_2/Practice/Apr/Apr_17/Account.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/J_Code/nuist_2/Practice/Apr/Apr_20/Computer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/J_Code/nuist_2/Practice/Apr/Apr_20/Keyboard.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/J_Code/nuist_2/Practice/Apr/Apr_20/Mouse.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/J_Code/nuist_2/Practice/Apr/Apr_20/Text.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/J_Code/nuist_2/Practice/Apr/Apr_20/Usb.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/J_Code/nuist_2/Practice/Apr/Apr_25/Text.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/J_Code/nuist_2/Practice/Apr/Apr_26/Text.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/J_Code/nuist_2/Practice/Apr/Apr_27/Text.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/J_Code/nuist_2/Practice/Apr/Apr_29/Card.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/J_Code/nuist_2/Practice/Apr/Apr_29/CardDemo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/J_Code/nuist_2/Practice/Apr/Apr_29/Text.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/J_Code/nuist_2/Practice/Apr/Apr_4/Student.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/J_Code/nuist_2/Practice/Apr/Apr_4/text.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/J_Code/nuist_2/Practice/Apr/Apr_5/Student.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/J_Code/nuist_2/Practice/Apr/Apr_5/text.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/J_Code/nuist_2/Practice/Apr/Apr_6/text.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/J_Code/nuist_2/Practice/Aug/Aug_30/Client.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/J_Code/nuist_2/Practice/Aug/Aug_30/ClientReaderThread.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/J_Code/nuist_2/Practice/Aug/Aug_30/MyServerThread.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/J_Code/nuist_2/Practice/Aug/Aug_30/ReflectDemo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/J_Code/nuist_2/Practice/Aug/Aug_30/Server.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/J_Code/nuist_2/Practice/Aug/Aug_30/Test.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/J_Code/nuist_2/Practice/Aug/Aug_30/UserServiceTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/J_Code/nuist_2/Practice/Aug/Aug_31/AnnotationDemo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/J_Code/nuist_2/Practice/Aug/Aug_31/Cat.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/J_Code/nuist_2/Practice/Aug/Aug_31/CatAgentProxy$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/J_Code/nuist_2/Practice/Aug/Aug_31/CatAgentProxy.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/J_Code/nuist_2/Practice/Aug/Aug_31/CatSkills.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/J_Code/nuist_2/Practice/Aug/Aug_31/CatTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/J_Code/nuist_2/Practice/Aug/Aug_31/Dom4jDemo/Dom4jDemo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/J_Code/nuist_2/Practice/Aug/Aug_31/Dom4jDemo/Dom4jDemo1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/J_Code/nuist_2/Practice/Aug/Aug_31/Dom4jDemo/Students.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/J_Code/nuist_2/Practice/Aug/Aug_31/Dom4jDemo/XpathDemo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/J_Code/nuist_2/Practice/Aug/Aug_31/MyTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/J_Code/nuist_2/Practice/Aug/Aug_31/ProxyTest/Test.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/J_Code/nuist_2/Practice/Aug/Aug_31/ProxyTest/UserService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/J_Code/nuist_2/Practice/Aug/Aug_31/ProxyTest/UserServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/J_Code/nuist_2/Practice/Aug/Aug_31/ProxyTest/UserServiceProxy$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/J_Code/nuist_2/Practice/Aug/Aug_31/ProxyTest/UserServiceProxy.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/J_Code/nuist_2/Practice/Aug/Aug_31/Test.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/J_Code/nuist_2/Practice/Aug/Aug_8/Client.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/J_Code/nuist_2/Practice/Aug/Aug_8/MyServerThread.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/J_Code/nuist_2/Practice/Aug/Aug_8/Server.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/J_Code/nuist_2/Practice/Feb/Feb_25/HashSetDemo/Student.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/J_Code/nuist_2/Practice/Feb/Feb_25/HashSetDemo/demo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/J_Code/nuist_2/Practice/Feb/Feb_25/MapDemo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/J_Code/nuist_2/Practice/Feb/Feb_25/TreeSetDemo/Student.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/J_Code/nuist_2/Practice/Feb/Feb_25/TreeSetDemo/demo$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/J_Code/nuist_2/Practice/Feb/Feb_25/TreeSetDemo/demo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/J_Code/nuist_2/Practice/Feb/Feb_25/text.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/J_Code/nuist_2/Practice/Mar/Mar_1/DouDiZhu/DouDiZhu.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/J_Code/nuist_2/Practice/Mar/Mar_1/DouDiZhu/DouDiZhu_up.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/J_Code/nuist_2/Practice/Mar/Mar_1/text.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/J_Code/nuist_2/Practice/Mar/Mar_11/Box.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/J_Code/nuist_2/Practice/Mar/Mar_11/Customer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/J_Code/nuist_2/Practice/Mar/Mar_11/Producer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/J_Code/nuist_2/Practice/Mar/Mar_11/demo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/J_Code/nuist_2/Practice/Mar/Mar_16/UDP/ReceiveDemo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/J_Code/nuist_2/Practice/Mar/Mar_16/UDP/SendDemo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/J_Code/nuist_2/Practice/Mar/Mar_16/UDPtext/ReceiveDemo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/J_Code/nuist_2/Practice/Mar/Mar_16/UDPtext/SendDemo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/J_Code/nuist_2/Practice/Mar/Mar_16/text.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/J_Code/nuist_2/Practice/Mar/Mar_17/TCP/ClientDemo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/J_Code/nuist_2/Practice/Mar/Mar_17/TCP/ServerDemo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/J_Code/nuist_2/Practice/Mar/Mar_17/TCPtext/ClientDemo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/J_Code/nuist_2/Practice/Mar/Mar_17/TCPtext/ServerDemo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/J_Code/nuist_2/Practice/Mar/Mar_17/TCPtext2/ClientDemo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/J_Code/nuist_2/Practice/Mar/Mar_17/TCPtext2/ServerDemo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/J_Code/nuist_2/Practice/Mar/Mar_17/TCPtext3/ClientDemo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/J_Code/nuist_2/Practice/Mar/Mar_17/TCPtext3/ServerDemo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/J_Code/nuist_2/Practice/Mar/Mar_17/TCPtext3/ServerThread.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/J_Code/nuist_2/Practice/Mar/Mar_17/text.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/J_Code/nuist_2/Practice/Mar/Mar_19/InterFace/Inter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/J_Code/nuist_2/Practice/Mar/Mar_19/InterFace/InterDemo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/J_Code/nuist_2/Practice/Mar/Mar_19/Lambda1/Flyable.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/J_Code/nuist_2/Practice/Mar/Mar_19/Lambda1/FlyableDemo$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/J_Code/nuist_2/Practice/Mar/Mar_19/Lambda1/FlyableDemo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/J_Code/nuist_2/Practice/Mar/Mar_19/classQuote/ConvertDemo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/J_Code/nuist_2/Practice/Mar/Mar_19/classQuote/Convertable.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/J_Code/nuist_2/Practice/Mar/Mar_19/text$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/J_Code/nuist_2/Practice/Mar/Mar_19/text.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/J_Code/nuist_2/Practice/Mar/Mar_2/text.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/J_Code/nuist_2/Practice/Mar/Mar_21/BuliderQuote/Student.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/J_Code/nuist_2/Practice/Mar/Mar_21/BuliderQuote/StudentBuilder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/J_Code/nuist_2/Practice/Mar/Mar_21/BuliderQuote/StudentDemo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/J_Code/nuist_2/Practice/Mar/Mar_21/ClassQuote/MyString.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/J_Code/nuist_2/Practice/Mar/Mar_21/ClassQuote/MyStringDemo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/J_Code/nuist_2/Practice/Mar/Mar_21/ObjQuote/PrintString.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/J_Code/nuist_2/Practice/Mar/Mar_21/ObjQuote/Printer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/J_Code/nuist_2/Practice/Mar/Mar_21/ObjQuote/PrinterDemo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/J_Code/nuist_2/Practice/Mar/Mar_21/text.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/J_Code/nuist_2/Practice/Mar/Mar_3/Student.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/J_Code/nuist_2/Practice/Mar/Mar_3/text.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/J_Code/nuist_2/Practice/Mar/Mar_30/text.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/J_Code/nuist_2/Practice/Mar/Mar_5/Student.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/J_Code/nuist_2/Practice/Mar/Mar_5/text.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/J_Code/nuist_2/Practice/Mar/Mar_8/GuessNumber/GuessNumber.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/J_Code/nuist_2/Practice/Mar/Mar_8/GuessNumber/GuessNumberDemo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/J_Code/nuist_2/Practice/Mar/Mar_8/text.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/J_Code/nuist_2/Practice/Mar/Mar_9/SellTicket/SellTicket.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/J_Code/nuist_2/Practice/Mar/Mar_9/SellTicket/SellTicketDemo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/J_Code/nuist_2/Practice/Mar/Mar_9/Thread/MyThread.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/J_Code/nuist_2/Practice/Mar/Mar_9/Thread/MyThreadDemo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/J_Code/nuist_2/Practice/Mar/Mar_9/text.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/J_Code/nuist_2/Practice/May/May_1/Employee.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/J_Code/nuist_2/Practice/May/May_1/EmployeeDemo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/J_Code/nuist_2/Practice/May/May_1/GoodEmployee.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/J_Code/nuist_2/Practice/May/May_1/Text.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/J_Code/nuist_2/Practice/May/May_11/Account.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/J_Code/nuist_2/Practice/May/May_11/MyThread.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/J_Code/nuist_2/Practice/May/May_11/MyVolatile.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/J_Code/nuist_2/Practice/May/May_11/ThreadDemo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/J_Code/nuist_2/Practice/May/May_11/VolatileDemo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/J_Code/nuist_2/Practice/May/May_16/Test.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/J_Code/nuist_2/Practice/May/May_17/Consumer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/J_Code/nuist_2/Practice/May/May_17/MyThread.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/J_Code/nuist_2/Practice/May/May_17/OsExperiment.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/J_Code/nuist_2/Practice/May/May_17/Producer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/J_Code/nuist_2/Practice/May/May_17/Tickets.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/J_Code/nuist_2/Practice/May/May_18/Test.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/J_Code/nuist_2/Practice/May/May_2/Test.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/J_Code/nuist_2/Practice/May/May_22/Test$CLibrary.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/J_Code/nuist_2/Practice/May/May_22/Test.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/J_Code/nuist_2/Practice/May/May_23/Test.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/J_Code/nuist_2/Practice/May/May_24/Test.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/J_Code/nuist_2/Practice/May/May_25/Test$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/J_Code/nuist_2/Practice/May/May_25/Test.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/J_Code/nuist_2/Practice/May/May_26/Student.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/J_Code/nuist_2/Practice/May/May_26/Test.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/J_Code/nuist_2/Practice/May/May_27/Test.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/J_Code/nuist_2/Practice/May/May_31/Test.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/J_Code/nuist_2/Practice/May/May_4/Account.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/J_Code/nuist_2/Practice/May/May_4/DrawThread.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/J_Code/nuist_2/Practice/May/May_4/Experiment/MyThread.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/J_Code/nuist_2/Practice/May/May_4/Experiment/ThreadDemo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/J_Code/nuist_2/Practice/May/May_4/ThreadDemo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/J_Code/nuist_2/Practice/May/May_9/Bean/Business.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/J_Code/nuist_2/Practice/May/May_9/Bean/Customer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/J_Code/nuist_2/Practice/May/May_9/Bean/Movie.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/J_Code/nuist_2/Practice/May/May_9/Bean/User.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/J_Code/nuist_2/Practice/May/May_9/ExecutorPoolDemo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/J_Code/nuist_2/Practice/May/May_9/LogBackDemo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/J_Code/nuist_2/Practice/May/May_9/MovieTest/MovieSystem.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/J_Code/nuist_2/Practice/May/May_9/MyCallable.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/J_Code/nuist_2/Practice/May/May_9/MyRunnable.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/J_Code/nuist_2/Practice/May/May_9/ScheduleExecutorServiceDemo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/J_Code/nuist_2/Practice/May/May_9/TimerDemo$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/J_Code/nuist_2/Practice/May/May_9/TimerDemo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/J_Code/nuist_2/Practice/Sep/Sep_4/MysqlTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/J_Code/nuist_2/Practice/Sep/Sep_5/Account.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/J_Code/nuist_2/Practice/Sep/Sep_5/Brand.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/J_Code/nuist_2/Practice/Sep/Sep_5/MysqlTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/J_Code/nuist_2/Practice/Sep/Sep_7/MysqlTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/J_Code/nuist_2/Web/E_2.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/J_Code/nuist_2/Web/Experiment2.js" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="2EwG3JsW8kyWg3dafcu5IRqelbd" />
+  <component name="ProjectViewState">
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="应用程序级" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="默认任务">
+      <changelist id="15808762-ed2d-42b0-a694-08faf629015f" name="变更" comment="" />
+      <created>1663499032530</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1663499032530</updated>
+      <workItem from="1663499037043" duration="7000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>

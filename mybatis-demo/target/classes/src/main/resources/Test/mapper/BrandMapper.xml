@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+
+
+
+    <!--
+        namespace 映射器地址
+        id 与接口方法同名
+        resultType 类名
+    -->
+<mapper namespace="Test.mapper.BrandMapper">
+    <select id="selectAll" resultType="Brand">
+        select * from tb_brand;
+    </select>
+</mapper>

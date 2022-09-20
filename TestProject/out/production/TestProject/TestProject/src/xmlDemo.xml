@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<students>
+    <student id="s001">
+        <name>  小明  </name>
+    </student>
+    <student id="s002">
+        <name>小芳</name>
+    </student>
+    <student id="s003">
+        <name>小王</name>
+    </student>
+</students>

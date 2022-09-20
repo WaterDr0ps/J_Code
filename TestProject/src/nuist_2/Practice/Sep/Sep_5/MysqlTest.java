@@ -1,7 +1,7 @@
 package nuist_2.Practice.Sep.Sep_5;
 
-import com.alibaba.druid.pool.DruidDataSourceFactory;
-import org.junit.jupiter.api.Test;
+//import com.alibaba.druid.pool.DruidDataSourceFactory;
+//import org.junit.jupiter.api.Test;
 
 import javax.sql.DataSource;
 import java.io.FileInputStream;
@@ -110,22 +110,22 @@ public class MysqlTest {
 
 
     }
-    @Test
-    public  void insertData () throws Exception{
-        Properties prop=new Properties();
-        prop.load(new FileInputStream("TestProject\\src\\druid.properties"));
-        DataSource ds=DruidDataSourceFactory.createDataSource(prop);
-        Connection conn = ds.getConnection();
-        String sql="insert into tb_brand (brand_name,company_name,ordered,description,status) values (?,?,?,?,?)";
-        PreparedStatement stmt=conn.prepareStatement(sql);
-        stmt.setString(1,"苹果");
-        stmt.setString(2,"苹果科技有限公司");
-        stmt.setInt(3,30);
-        stmt.setString(4,"苹果666");
-        stmt.setInt(5,1);
-        int count=stmt.executeUpdate();
-        System.out.println(count>0);
-    }
+//    @Test
+//    public  void insertData () throws Exception{
+//        Properties prop=new Properties();
+//        prop.load(new FileInputStream("TestProject\\src\\druid.properties"));
+//        DataSource ds=DruidDataSourceFactory.createDataSource(prop);
+//        Connection conn = ds.getConnection();
+//        String sql="insert into tb_brand (brand_name,company_name,ordered,description,status) values (?,?,?,?,?)";
+//        PreparedStatement stmt=conn.prepareStatement(sql);
+//        stmt.setString(1,"苹果");
+//        stmt.setString(2,"苹果科技有限公司");
+//        stmt.setInt(3,30);
+//        stmt.setString(4,"苹果666");
+//        stmt.setInt(5,1);
+//        int count=stmt.executeUpdate();
+//        System.out.println(count>0);
+//    }
 }
 
 
