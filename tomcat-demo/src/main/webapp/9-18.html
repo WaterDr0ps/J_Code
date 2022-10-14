@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>9-18</title>
+    <style>
+        label {
+            width: 80px;
+            display: inline-block;
+            text-align: right;
+            font-weight: bold;
+        }
+
+        .tips label {
+            font-family: 微软雅黑, serif;
+            font-weight: normal;
+            color: gray;
+            font-size: small;
+            margin-left: 28px;
+        }
+
+        img {
+            width: 25px;
+            height: 15px;
+            right: 0;
+            position: center;
+            vertical-align: middle;
+        }
+
+        #submit {
+            margin: 200px auto;
+        }
+
+        form {
+            width: 300px;
+            height: 300px;
+        }
+    </style>
+</head>
+<body>
+<form action="/tomcat-demo/req1" method="post" id="from1">
+    <div class="item">
+        <label for="username">用户名:</label>
+        <input type="text" name="username" id="username" placeholder="username">
+        <br>
+        <span id="username_err" style="display:none">长度需3-10</span>
+    </div>
+    <br>
+    <div class="item" id="psw_hide">
+        <label for="password">密码:</label>
+        <input type="password" name="password" id="password" placeholder="password">
+        <img id="img" src="../../../../../Web/file/eyes.png" alt="显示">
+        <br>
+        <span id="password_err" style="display:none">需6位纯数字密码</span>
+    </div>
+
+    <div class="button">
+        <input type="submit" id="submit">
+    </div>
+</form>
+
+<script type="text/javascript">
+    let flag=true;
+    let psw = document.getElementById("password");
+    let user = document.getElementById("username");
+    let u_tip = document.getElementById("user_tips");
+    document.getElementById("img").onclick = function () {
+        if (psw.type === "password") {
+            psw.type = "text";
+        } else {
+            psw.type = "password"
+        }
+    };
+    document.getElementById("from1").onsubmit = function () {
+        if (psw.value === "" || user.value === "") {
+            alert("内容不能为空");
+        } else if (user.onblur === true && psw.onblur === true) {
+            alert("提交成功");
+        }else{
+            alert("格式错误");
+        }
+    }
+    user.onblur = function () {
+        let val = user.value;
+        if (val.length < 3 || val.length > 10) {
+            document.getElementById("username_err").style.display = "";
+            return false;
+        } else {
+            document.getElementById("username_err").style.display = "none";
+            return true;
+        }
+    }
+    psw.onblur = function () {
+        let val = psw.value;
+        if (val.length !== 6) {
+            document.getElementById("password_err").style.display = "";
+            flag = false;
+        } else {
+            for (let i = 0; i < val.length; i++) {
+                if (val[i] < 30 || val[i] > 39) {
+                    document.getElementById("password_err").style.display = "";
+                    flag = false;
+                }
+            }
+            document.getElementById("password_err").style.display = "none";
+        }
+        return flag;
+    }
+
+
+</script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

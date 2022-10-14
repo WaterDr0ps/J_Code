@@ -1,0 +1,9 @@
+Test\Service\BrandService.class
+Test\Utils\SqlSessionFactoryUtils.class
+Test\Web\SelectAllServlet.class
+Test\pojo\Brand.class
+Test\Web\AddServlet.class
+Test\Web\ServletByIdServlet.class
+Test\mapper\BrandMapper.class
+Test\Web\DeleteServlet.class
+Test\Web\UpdateServlet.class

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<div id="app">
+    <input type="text" v-model="username">
+    {{username}}
+    <input type="button" v-on:click="show()">
+    <div v-for="(addr,i) in address">
+        {{i+1}}---{{addr}}<br>
+    </div>
+</div>
+
+<script src="js/vue.js"></script>
+<script>
+    const {createApp} = Vue
+    createApp({
+        data() {
+            return {
+                username: "1234",
+                address:["北京","上海","广州"]
+            }
+        },
+        methods:{
+            show(){
+                alert("被点击了")
+            }
+        },
+        mounted(){
+            alert("加载完成")
+        }
+    }).mount("#app")
+
+    // new Vue({
+    //     el:"#app",
+    //     data(){
+    //         return{
+    //             username:"123"
+    //         }
+    //     }
+    // })
+</script>
+
+
+</body>
+</html>
