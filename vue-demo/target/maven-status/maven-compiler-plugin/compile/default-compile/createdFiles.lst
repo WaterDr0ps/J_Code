@@ -1,0 +1,13 @@
+Test\pojo\User.class
+Test\Utils\SqlSessionFactoryUtils.class
+Test\mapper\UserMapper.class
+Test\Service\UserService.class
+Test\web\SelectUserServlet.class
+Test\web\BaseServlet.class
+Test\Service\BrandService.class
+Test\web\SelectAllServlet.class
+Test\Utils\CheckCodeUtils.class
+Test\web\AddServlet.class
+Test\pojo\Brand.class
+Test\mapper\BrandMapper.class
+Test\web\BrandServlet.class

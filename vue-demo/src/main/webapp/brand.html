@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="./css/gridTable.css">
+
+</head>
+<body>
+
+<div id="app">
+    <input type="button" value="新增" id="add" @click="addButton()"><br>
+    <hr>
+    <table border="1" cellspacing="0" width="800" class="gridTable">
+        <tr>
+            <th>序号</th>
+            <th>品牌名称</th>
+            <th>企业名称</th>
+            <th>排序</th>
+            <th>品牌介绍</th>
+            <th>状态</th>
+            <th>操作</th>
+        </tr>
+        <tr v-for="(brand,i) in brands" align="center">
+            <td>{{i + 1}}</td>
+            <td>{{brand.brandName}}</td>
+            <td>{{brand.companyName}}</td>
+            <td>{{brand.ordered}}</td>
+            <td>{{brand.description}}</td>
+            <td>{{brand.statusStr}}</td>
+            <td><a href="#">修改</a> <a href="#">删除</a></td>
+        </tr>
+    </table>
+</div>
+
+
+<script src="js/axios.js"></script>
+<script src="js/vue.js"></script>
+<script>
+    const {createApp} = Vue
+    createApp({
+        data() {
+            return {
+                brands: []
+            }
+        },
+        methods:{
+            addButton(){
+                location.href="http://localhost:8080/vue-demo/addBrand.html"
+            }
+        },
+        mounted() {
+            var _this = this;
+            axios({
+                method: "post",
+                url: "http://localhost:8080/vue-demo/selectAllServlet"
+            }).then(function (resp) {
+                _this.brands = resp.data;
+            })
+        }
+    }).mount("#app")
+
+
+</script>
+
+</body>
+</html>

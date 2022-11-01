@@ -1,0 +1,104 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>add</title>
+    <style>
+        *{
+            color: #3d3d3d;
+        }
+        .wrapper{
+            background-image: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
+            width: 350px;
+            height: 540px;
+            border-radius: 15px;
+            padding:0 20px;
+        }
+        .header{
+            color: black;
+            font-size: 35px;
+            font-weight: bold;
+            text-align: center;
+            line-height: 100px;
+        }
+        input,textarea{
+            display: inline-block;
+            margin-bottom: 25px;
+            padding: 8px;
+            font-size: 15px;
+            border: 0;
+            box-shadow: 3px 3px #9a9999;
+        }
+        input[type="radio"]{
+            box-shadow:none;
+        }
+        label{
+            display: inline-block;
+            float: left;
+            width: 80px;
+            height: 40px;
+            text-align: right;
+        }
+        .btn{
+            display: inline-block;
+            letter-spacing: 10px;
+            padding-left: 15px;
+            text-align: center;
+            color: white;
+            border: 0;
+            box-shadow:0 -7px rgba(206, 98, 73, 0.99) inset;
+            border-radius: 7px;
+            width: 70px;
+            height: 40px;
+            cursor: pointer;
+            background-color: rgba(241, 117, 88, 0.99);
+        }
+    </style>
+</head>
+<body>
+<div id="app">
+    <div class="container">
+        <div class="wrapper">
+            <div class="header">添加品牌</div>
+            <form action="" method="post">
+                <label for="brandName">品牌名称：</label><input type="text" id="brandName" name="brandName" v-model="brand.brandName"><br>
+                <label for="companyName">企业名称：</label><input type="text" id="companyName" name="companyName" v-model="brand.companyName"><br>
+                <label for="ordered">排序：</label><input type="text" id="ordered" name="ordered" v-model="brand.ordered"><br>
+                <label for="description">描述信息：</label><textarea rows="5" cols="20" name="description" id="description" v-model="brand.description"></textarea><br>
+                <label>状态：</label><input type="radio" name="status" value="0" v-model="brand.status">禁用<input type="radio" name="status" value="1"v-model="brand.status">启用<br>
+                <input type="button" id="submit" value="提交" class="btn" @click="submit">
+            </form>
+        </div>
+    </div>
+</div>
+
+<script src="js/axios.js"></script>
+<script src="js/vue.js"></script>
+<script>
+    const {createApp} = Vue
+    createApp({
+        data(){
+            return{
+                //获取json数据
+                brand:{}
+            }
+        },
+        methods:{
+            submit() {
+                var _this=this;
+                axios({
+                    method:"post",
+                    url:"http://localhost:8080/vue-demo/addServlet",
+                    data:_this.brand
+                }).then(function (resp) {
+                    if(resp.data==="success"){
+                        location.href="http://localhost:8080/vue-demo/brand.html";
+                    }
+                })
+            }
+        }
+    }).mount("#app")
+</script>
+</body>
+</html>

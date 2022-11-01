@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+
+
+<mapper namespace="Test.mapper.BrandMapper">
+
+    <resultMap id="BrandResultMap" type="brand">
+        <result column="brand_name" property="brandName"/>
+        <result column="company_name" property="companyName"/>
+    </resultMap>
+
+    <select id="selectAll" resultMap="BrandResultMap">
+        select *
+        from tb_brand;
+    </select>
+
+    <insert id="add">
+        insert into tb_brand
+        values (null, #{brandName}, #{companyName}, #{ordered},
+                #{description}, #{status});
+    </insert>
+
+    <delete id="deleteByIds">
+        delete from tb_brand where id in
+        <foreach collection="ids" item="id" separator="," open="(" close=")">
+            #{id}
+        </foreach>
+    </delete>
+
+    <delete id="deleteById">
+        delete
+        from tb_brand
+        where id = #{id};
+    </delete>
+
+    <update id="update">
+        update tb_brand
+        set brand_name=#{brandName},
+            company_name=#{companyName},
+            ordered=#{ordered},
+            description=#{description},
+            status=#{status}
+        where id = #{id};
+    </update>
+
+    <select id="selectCondition" resultMap="BrandResultMap">
+        select * from tb_brand
+        <where>
+            <if test="brand.brandName != null and brand.brandName != ''">
+                and brand_name like #{brand.brandName}
+            </if>
+
+            <if test="brand.companyName != null and brand.companyName != ''">
+                and company_name like #{brand.companyName}
+            </if>
+
+            <if test="brand.status != 0">
+                and status=#{brand.status}
+            </if>
+        </where>
+    </select>
+
+</mapper>

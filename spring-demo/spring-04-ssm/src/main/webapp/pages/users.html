@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .el-table .warning-row {
+            background: oldlace;
+        }
+
+        .el-table .success-row {
+            background: #f0f9eb;
+        }
+    </style>
+</head>
+<body>
+
+<div id="app">
+    <template>
+        <!--
+            搜索区
+        -->
+        <div class="search">
+            <el-select v-model="user.gender" placeholder="性别" size="medium">
+                <el-option label="男" value="1"></el-option>
+                <el-option label="女" value="2"></el-option>
+            </el-select>
+            <el-input v-model="user.name" placeholder="姓名" size="medium" style="width: 220px"></el-input>
+            <el-button type="primary" size="medium" @click="selectCondition">查询</el-button>
+            <br>
+            <br>
+            <el-row>
+                <el-button type="danger" plain @click="deleteByIds()">批量删除</el-button>
+                <el-button type="primary" plain @click="add">新增</el-button>
+            </el-row>
+        </div>
+        <!--
+            新增表单
+        -->
+        <el-dialog
+                title="编辑品牌"
+                :visible.sync="dialogVisible"
+                width="30%">
+            <el-form label-width="100px" :model="user">
+                <el-form-item label="姓名">
+                    <el-input v-model="user.name" style="width: 380px"></el-input>
+                </el-form-item>
+                <el-form-item label="年龄">
+                    <el-input v-model="user.age" style="width: 380px"></el-input>
+                </el-form-item>
+                <el-form-item label="性别">
+                    <el-input v-model="user.gender" style="width: 380px"></el-input>
+                </el-form-item>
+                <el-form-item label="手机号">
+                    <el-input v-model="user.phone" style="width:380px"></el-input>
+                </el-form-item>
+                <el-form-item label="地址">
+                    <el-input v-model="user.address" style="width:380px"></el-input>
+                </el-form-item>
+                <div align="right">
+                    <el-button @click="dialogVisible = false">取消</el-button>
+                    <el-button type="primary" @click="saveData">提交</el-button>
+                </div>
+            </el-form>
+        </el-dialog>
+        <!--
+            数据区
+        -->
+        <el-table
+                ref="tableData"
+                :data="tableData"
+                style="width: 100%"
+                :row-class-name="tableRowClassName"
+                @selection-change="handleSelectionChange">
+            <el-table-column
+                    type="selection"
+                    width="55">
+            </el-table-column>
+            <el-table-column
+                    type="index"
+                    label="序号"
+                    width="230">
+            </el-table-column>
+            <el-table-column
+                    prop="name"
+                    label="姓名"
+                    width="260">
+            </el-table-column>
+            <el-table-column
+                    prop="age"
+                    label="年龄"
+                    width="260">
+            </el-table-column>
+            <el-table-column
+                    prop="gender"
+                    label="性别"
+                    width="260">
+            </el-table-column>
+            <el-table-column
+                    prop="phone"
+                    label="手机号"
+                    width="260">
+            </el-table-column>
+            <el-table-column
+                    prop="address"
+                    label="地址"
+                    width="350">
+            </el-table-column>
+            <el-table-column
+                    label="操作">
+                <!--插槽获取index-->
+                <template v-slot="scope">
+                    <el-button type="primary" size="small" @click="update(scope.$index)">修改</el-button>
+                    <el-button type="danger" size="small" @click="deleteById(scope.$index)">删除</el-button>
+                </template>
+
+            </el-table-column>
+        </el-table>
+        <!--
+            分页查询
+        -->
+        <div class="block">
+            <el-pagination
+                    @size-change="handleSizeChange"
+                    @current-change="handleCurrentChange"
+                    :current-page="currentPage"
+                    :page-sizes="[5,10,15,20]"
+                    :page-size.sync="pageSize"
+                    layout="total, sizes, prev, pager, next, jumper"
+                    :total=totalCount
+                    background>
+            </el-pagination>
+        </div>
+    </template>
+</div>
+
+
+<script src="../js/vue.js"></script>
+<script src="../element-ui/lib/index.js"></script>
+<link rel="stylesheet" href="../element-ui/lib/theme-chalk/index.css">
+<script src="../js/axios.js"></script>
+
+<script>
+    new Vue({
+        el:"#app",
+
+        methods:{
+            tableRowClassName({row, rowIndex}) {
+                if (rowIndex%2 === 0) {
+                    row.index=rowIndex;
+                    return 'warning-row';
+                } else if (rowIndex%2 === 1) {
+                    row.index=rowIndex;
+                    return 'success-row';
+                }
+                return '';
+            },
+            handleSelectionChange(val) {
+                this.multipleSelection = val;
+            },
+            //页大小发生变化
+            handleSizeChange(val) {
+                this.pageSize = val;
+                this.selectAll();
+            },
+            //页数发生变化
+            handleCurrentChange(val) {
+                this.currentPage = val;
+                this.selectAll();
+            },
+            selectAll(){
+                axios.get("/spring-04-ssm/users/"+this.currentPage+"&"+this.pageSize).then(resp=>{
+                    this.tableData=resp.data.data.rows;
+                    this.totalCount=resp.data.data.totalCount;
+                });
+            },
+            selectCondition(){
+
+            },
+            deleteByIds(){
+
+            },
+            deleteById(index){
+                this.$refs.tableData.toggleRowSelection(this.tableData[index], true);
+                this.$confirm('此操作将永久删除该文件, 是否继续?', '提示', {
+                    type: 'warning'
+                }).then(() => {
+                    //获取tableData里index位置索引处id的值
+                    this.selectedId = this.tableData[index].id;
+                    axios.delete("/spring-04-ssm/users/"+this.selectedId).then(resp => {
+                        if (resp.data.code === 20021){
+                            this.$message.success("删除成功");
+                        }else if(resp.data.code === 20020){
+                            this.$message.error("删除失败");
+                        }else{
+                            this.$message.error(resp.data.message);
+                        }
+                    }).finally(()=>{
+                        this.selectAll();
+                    });
+                }).catch(() => {
+                    this.$message.info('已取消删除');
+                    this.selectAll();
+                })
+            },
+            resetForm(){
+                this.user={};
+            },
+            add(){
+                //用与清空dialog
+                this.type=1;
+                this.dialogVisible=true;
+                this.resetForm();
+            },
+            update(index){
+                this.type=2;
+                this.dialogVisible=true;
+                this.user=this.tableData[index];
+            },
+            saveData(){
+                if (this.type === 1) {
+                    axios.post("/spring-04-ssm/users",this.user).then(resp => {
+                        this.dialogVisible = false;
+                        if (resp.data.code === 20011) {
+                            this.$message.success('恭喜你，添加成功');
+                        }else if(resp.data.code === 20010){
+                            this.$message.error('添加失败');
+                        }else{
+                            this.$message.error(resp.data.message);
+                        }
+                    }).finally(()=>{
+                        // 重新查询数据
+                        this.selectAll();
+                    })
+                } else if (this.type === 2) {
+                    axios.put("/spring-04-ssm/users",this.user).then(resp => {
+                        this.dialogVisible = false;
+                        if (resp.data.code === 20031) {
+                            this.$message.success('恭喜你，更新成功');
+                        }else if(resp.data.code === 20030){
+                            this.$message.error('更新失败');
+                        }else{
+                            this.$message.error(resp.data.message);
+                        }
+                    }).finally(()=>{
+                        // 重新查询数据
+                        this.selectAll();
+                    })
+                }
+            }
+        },
+        data(){
+            return{
+                tableData: [{}],
+                multipleSelection: [],
+                user:{
+                    id:"",
+                    name:"",
+                    age:"",
+                    gender:"",
+                    phone:"",
+                    address:"",
+                },
+                dialogVisible: false,
+                type:"",
+                selectedId:"",
+                //首页是1
+                currentPage: 1,
+                //一页多少数据
+                pageSize:5,
+                totalCount:100
+            }
+        },
+        mounted(){
+            this.selectAll();
+        }
+    })
+</script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
