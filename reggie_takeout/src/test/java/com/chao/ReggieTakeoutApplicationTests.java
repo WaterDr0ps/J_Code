@@ -8,6 +8,8 @@ class ReggieTakeoutApplicationTests {
 
     @Test
     void contextLoads() {
+        String[] s={"1","2","3"};
+        System.out.println(s);
     }
 
 }
