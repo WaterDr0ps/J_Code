@@ -2,11 +2,13 @@ package com.chao.common;
 
 import lombok.Data;
 
+import java.io.Serializable;
+
 /**
  * @author Eliot
  */
 @Data
-public class Result<T> {
+public class Result<T> implements Serializable {
     private Integer code;
 
     private String msg;

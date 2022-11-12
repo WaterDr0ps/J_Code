@@ -10,6 +10,8 @@ import com.chao.service.CategoryService;
 import com.chao.service.SetmealService;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.cache.annotation.CacheEvict;
+import org.springframework.cache.annotation.Cacheable;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -34,6 +36,7 @@ public class SetmealController {
      * @return
      */
     @PostMapping
+    @CacheEvict(value = "setmealCaching",allEntries = true)
     public Result<String> saveWithDish(@RequestBody SetmealDto setmealDto){
         setmealService.saveWithDish(setmealDto);
         return Result.success("添加成功");
@@ -125,6 +128,7 @@ public class SetmealController {
      * @return
      */
     @GetMapping("/list")
+    @Cacheable(value = "setmealCaching",key = "#setmeal.getCategoryId+'_'+#setmeal.getStatus")
     public Result<List<Setmeal>> list(Setmeal setmeal){
         LambdaQueryWrapper<Setmeal> queryWrapper = new LambdaQueryWrapper<>();
         queryWrapper.eq(setmeal.getCategoryId()!=null,Setmeal::getCategoryId,setmeal.getCategoryId())

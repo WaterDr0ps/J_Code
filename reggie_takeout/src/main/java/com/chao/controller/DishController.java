@@ -13,6 +13,9 @@ import com.chao.service.DishService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.cache.annotation.CacheEvict;
+import org.springframework.cache.annotation.CachePut;
+import org.springframework.cache.annotation.Cacheable;
 import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.web.bind.annotation.*;
 
@@ -92,6 +95,7 @@ public class DishController {
      * @return
      */
     @PostMapping
+    @CacheEvict(value = "dishCaching",key = "#dishDto.categoryId+'_'+#dishDto.status")
     public Result<String> save(@RequestBody DishDto dishDto) {
         dishService.saveWithFlavors(dishDto);
         return Result.success("成功");
@@ -116,11 +120,9 @@ public class DishController {
      * @return
      */
     @PutMapping
+    @CachePut(value = "dishCaching",key = "#dishDto.categoryId+'_'+#dishDto.status",unless = "#dishDto == null")
     public Result<String> update(@RequestBody DishDto dishDto) {
         dishService.updateWithFlavors(dishDto);
-
-        String key = "dish"+dishDto.getCategoryId()+"_1";
-        redisTemplate.delete(key);
         return Result.success("修改成功");
     }
 
@@ -131,8 +133,9 @@ public class DishController {
      * @return
      */
     @GetMapping("/list")
+    @Cacheable(value = "dishCaching",key = "#dish.getCategoryId()+'_'+#dish.getStatus()")
     public Result<List<DishDto>> list(Dish dish) {
-        //动态拼接key
+        /*//动态拼接key
         String key = "dish_" + dish.getCategoryId() + "_" + dish.getStatus();
         //从缓存拿数据
         List<DishDto> dishDtoList = null;
@@ -140,7 +143,7 @@ public class DishController {
         //如果拿到数据,直接返回
         if (dishDtoList != null) {
             return Result.success(dishDtoList);
-        }
+        }*/
 
         //缓存没数据,需要查表
         //目的将所有数据封装成dto对象
@@ -150,7 +153,7 @@ public class DishController {
                 .orderByAsc(Dish::getSort).orderByDesc(Dish::getUpdateTime);
         List<Dish> list = dishService.list(queryWrapper);
 
-        dishDtoList = list.stream().map(item -> {
+        List<DishDto> dishDtoList = list.stream().map(item -> {
             DishDto dishDto = new DishDto();
             BeanUtils.copyProperties(item, dishDto);
 
@@ -170,7 +173,7 @@ public class DishController {
         }).collect(Collectors.toList());
 
         //将数据存入缓存
-        redisTemplate.opsForValue().set(key,dishDtoList,60, TimeUnit.MINUTES);
+        //redisTemplate.opsForValue().set(key,dishDtoList,60, TimeUnit.MINUTES);
 
 
         return Result.success(dishDtoList);
